@@ -9,10 +9,12 @@ dotenv.load();
 
 // Init
 var emaddons = new EmberAddons({debug: true});
+
 var db = new DB({
   databaseURL: process.env.DATABASE_URL,
   debug: true
 });
+
 var s3repo = new s3({
   key: process.env.AWS_ACCESS_KEY,
   secret: process.env.AWS_SECRET_KEY,
@@ -23,12 +25,13 @@ var s3repo = new s3({
   feedFilename: process.env.FEED_FILENAME,
   maxItemsPerPage: parseInt(process.env.MAX_ITEMS_PER_PAGE, 10)
 });
+
 var feed = new RssFeed({
   language: 'en',
   pubDate: new Date(),
   title: 'Broccoli Plugins',
   description: 'Listing hundreds of plugins for Broccoli.',
-  'feed_url': 'https://broccoli-plugins-test-run.s3.amazonaws.com/feed.xml',
+  'feed_url': 'https://' + process.env.AWS_BUCKET_NAME + '.s3.amazonaws.com/' + process.env.FEED_FILENAME,
   'site_url': 'http://broccoliplugins.com/'
 });
 

@@ -23,7 +23,7 @@ app.use(function(req, res, next) {
 
 app.get('/', function(req, res) {
   res.redirect(301,
-    'https://broccoli-plugins-testing.s3.amazonaws.com/plugins-dev.json');
+    'https://' + process.env.AWS_BUCKET_NAME + '.s3.amazonaws.com/' + process.env.PLUGIN_JSON_FILENAME);
 });
 
 app.get('/stats', function(req, res) {

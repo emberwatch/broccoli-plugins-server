@@ -1,5 +1,5 @@
 # ember-addons-server
-API server for [addons.builtwithember.io](http://addons.builtwithember.io)
+API server for [broccoliplugins.com](Broccoli Plugins)
 
 # Getting started 
 

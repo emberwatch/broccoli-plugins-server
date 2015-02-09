@@ -23,7 +23,7 @@ app.use(function(req, res, next) {
 
 app.get('/', function(req, res) {
   res.redirect(301,
-    'https://io-builtwithember-addons-data.s3.amazonaws.com/addons.json');
+    'https://broccoli-plugins-testing.s3.amazonaws.com/plugins-dev.json');
 });
 
 app.get('/stats', function(req, res) {

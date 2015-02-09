@@ -20,14 +20,14 @@
 -- ----------------------------
 DROP SEQUENCE IF EXISTS "public"."addos_id_seq";
 CREATE SEQUENCE "public"."addos_id_seq" INCREMENT 1 START 1854 MAXVALUE 9223372036854775807 MINVALUE 1 CACHE 1;
-ALTER TABLE "public"."addos_id_seq" OWNER TO "gcollazo";
+ALTER TABLE "public"."addos_id_seq" OWNER TO "postgres";
 
 -- ----------------------------
 --  Sequence structure for stats_id_seq
 -- ----------------------------
 DROP SEQUENCE IF EXISTS "public"."stats_id_seq";
 CREATE SEQUENCE "public"."stats_id_seq" INCREMENT 1 START 2 MAXVALUE 9223372036854775807 MINVALUE 1 CACHE 1;
-ALTER TABLE "public"."stats_id_seq" OWNER TO "gcollazo";
+ALTER TABLE "public"."stats_id_seq" OWNER TO "postgres";
 
 -- ----------------------------
 --  Table structure for addons
@@ -39,7 +39,7 @@ CREATE TABLE "public"."addons" (
 	"doc" json
 )
 WITH (OIDS=FALSE);
-ALTER TABLE "public"."addons" OWNER TO "gcollazo";
+ALTER TABLE "public"."addons" OWNER TO "postgres";
 
 -- ----------------------------
 --  Table structure for metrics
@@ -52,7 +52,7 @@ CREATE TABLE "public"."metrics" (
 	"value" numeric NOT NULL
 )
 WITH (OIDS=FALSE);
-ALTER TABLE "public"."metrics" OWNER TO "gcollazo";
+ALTER TABLE "public"."metrics" OWNER TO "postgres";
 
 
 -- ----------------------------

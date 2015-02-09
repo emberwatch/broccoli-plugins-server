@@ -17,18 +17,19 @@ var s3repo = new s3({
   key: process.env.AWS_ACCESS_KEY,
   secret: process.env.AWS_SECRET_KEY,
   bucket: process.env.AWS_BUCKET_NAME,
+  region: process.env.AWS_REGION || 'us-standard',
   pagesFilename: process.env.PAGES_FILENAME,
-  addonFilename: process.env.ADDON_JSON_FILENAME,
+  pluginFilename: process.env.PLUGIN_JSON_FILENAME,
   feedFilename: process.env.FEED_FILENAME,
   maxItemsPerPage: parseInt(process.env.MAX_ITEMS_PER_PAGE, 10)
 });
 var feed = new RssFeed({
   language: 'en',
   pubDate: new Date(),
-  title: 'Ember Addons',
-  description: 'Listing hundreds of modules that extend ember-cli.',
-  'feed_url': 'https://io-builtwithember-addons-data.s3.amazonaws.com/feed.xml',
-  'site_url': 'http://addons.builtwithember.io/'
+  title: 'Broccoli Plugins',
+  description: 'Listing hundreds of plugins for Broccoli.',
+  'feed_url': 'https://broccoli-plugins-test-run.s3.amazonaws.com/feed.xml',
+  'site_url': 'http://broccoliplugins.com/'
 });
 
 var startTime = new Date().getTime();

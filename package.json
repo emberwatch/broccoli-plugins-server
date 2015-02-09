@@ -1,12 +1,12 @@
 {
-  "name": "ember-addons-server",
+  "name": "broccoli-plugins-server",
   "version": "1.0.0",
-  "description": "API server for addons.builtwithember.io",
+  "description": "API server for broccoliplugins.com",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Giovanni Collazo - @gcollazo",
+  "author": "Philip Poots - @pootsbook",
   "license": "MIT",
   "keywords": [
     "express",
@@ -15,12 +15,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/gcollazo/ember-addons-server.git"
+    "url": "git://github.com/pootsbook/broccoli-plugins-server.git"
   },
   "bugs": {
-    "url": "https://github.com/gcollazo/ember-addons-server/issues"
+    "url": "https://github.com/pootsbook/broccoli-plugins-server/issues"
   },
-  "homepage": "https://github.com/gcollazo/ember-addons-server",
+  "homepage": "https://github.com/pootsbook/broccoli-plugins-server",
   "dependencies": {
     "anydb-sql": "^0.6.16",
     "compression": "^1.1.0",

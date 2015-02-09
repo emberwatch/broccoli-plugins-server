@@ -6,7 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Philip Poots - @pootsbook",
+  "author": "Giovanni Collazo - @gcollazo",
+  "contributors": [
+    {
+      "name": "Kerry Gallagher",
+      "twitter": "@Kerry350"
+    },
+    { "name": "Philip Poots",
+      "twitter": "@pootsbook"
+    }
+  ],
   "license": "MIT",
   "keywords": [
     "express",
@@ -15,12 +24,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/pootsbook/broccoli-plugins-server.git"
+    "url": "git://github.com/emberwatch/broccoli-plugins-server.git"
   },
   "bugs": {
-    "url": "https://github.com/pootsbook/broccoli-plugins-server/issues"
+    "url": "https://github.com/emberwatch/broccoli-plugins-server/issues"
   },
-  "homepage": "https://github.com/pootsbook/broccoli-plugins-server",
+  "homepage": "https://github.com/emberwatch/broccoli-plugins-server",
   "dependencies": {
     "anydb-sql": "^0.6.16",
     "compression": "^1.1.0",

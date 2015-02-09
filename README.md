@@ -1,4 +1,4 @@
-# ember-addons-server
+# broccoli-plugins-server
 API server for [broccoliplugins.com](Broccoli Plugins)
 
 # Getting started 

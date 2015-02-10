@@ -52,6 +52,29 @@ Whichever bucket you decide to use, you'll need to setup a policy on the bucket 
 </CORSConfiguration>
 ```
 
+## IAM Policy
+
+```
+{
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "S3:*",
+      "Resource": "arn:aws:s3:::<BUCKET NAME>/*",
+      "Condition": {}
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket"
+      ],
+      "Resource": "arn:aws:s3:::<BUCKET NAME>",
+      "Condition": {}
+    }
+  ]
+}
+```
+
 # Environment variables
 
 You'll need to setup a few environment variables. The easiest way to do this locally is to place a `.env` file in the root of the project with the following envrionment variables:
